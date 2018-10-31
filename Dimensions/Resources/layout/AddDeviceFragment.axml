@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:rowCount="3"
+    android:columnCount="3">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBarcode"
+        android:hint="Enter Barcode"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="3" />
+    <Space
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/txtWidth"
+        android:inputType="numberDecimal"
+        android:hint="W"
+        android:layout_row="1"
+        android:layout_column="0" />
+    <Space
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:id="@+id/txtHeight"
+        android:hint="H"
+        android:inputType="numberDecimal"
+        android:layout_row="1"
+        android:layout_column="1" />
+    <Space
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDepth"
+        android:hint="D"
+        android:inputType="numberDecimal"
+        android:layout_row="1"
+        android:layout_column="2" />
+    <Button xmlns:a="http://schemas.android.com/tools"
+        android:id="@+id/btnSave"
+        android:layout_column="1"
+        android:backgroundTint="#234E9B"
+        android:textColor="#FFFFFF"
+        android:text="Save" />
+</GridLayout>
